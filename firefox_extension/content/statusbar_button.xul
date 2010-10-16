@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<overlay id="sample" 
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+ <script type="application/x-javascript"  src="main.js"/>
+ <statusbar id="status-bar" context="debug-level">
+  <statusbarpanel id="cakedebug-panel" context="debug-level" style="padding: 0px; margin: 0px;" oncommand="cakedebughelper_toggle();">
+   <image id="cakedebug_image" src="chrome://cakedebughelper/skin/cakedebug_off.png" />
+  </statusbarpanel>
+  <statusbarpanel id="debuglevel-panel" label="-" style="padding: 0px; margin: 0px;" />
+ </statusbar>
+ <popupset>
+ <menupopup id="debug-level">
+   <menuitem label="debug = 2" oncommand="cakedebughelper_setlevel(2);" />
+   <menuitem label="debug = 1" oncommand="cakedebughelper_setlevel(1);" />
+   <menuitem label="debug = 0" oncommand="cakedebughelper_setlevel(0);" />
+ </menupopup>
+ </popupset>
+</overlay>
+

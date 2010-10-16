@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+  <Description about="urn:mozilla:install-manifest">
+    <em:id>{ddaeaff9-fc76-4dba-904a-1cab2f26d91b}</em:id>   <!-- generate UUID each extension -->
+    <em:version>0.1</em:version>  <!-- version of extension -->
+    <em:type>2</em:type>  <!-- 2:extension -->
+   
+    <!-- Target Application this extension can install into, 
+         with minimum and maximum supported versions. --> 
+    <em:targetApplication>
+      <Description>
+        <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>  <!-- Firefox only UUID -->
+        <em:minVersion>3.6</em:minVersion>
+        <em:maxVersion>3.6.*</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+   
+    <!-- Front End MetaData -->    <!-- extension information for human -->
+    <em:name>CakeDebugHelper</em:name>
+    <em:description>CakePHP debug level control from Firefox</em:description>
+    <em:creator>tenkoma@gmail.com</em:creator>
+    <!--em:homepageURL>http://github.com/tenkoma</em:homepageURL-->
+  </Description>      
+</RDF>

@@ -1,0 +1,5 @@
+content     cakedebughelper    content/
+skin        cakedebughelper    default skin/
+
+overlay     chrome://browser/content/browser.xul chrome://cakedebughelper/content/statusbar_button.xul
+style       chrome://browser/content/browser.xul chrome://cakedebughelper/skin/default.css
