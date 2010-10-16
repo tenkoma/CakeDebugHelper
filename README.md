@@ -21,3 +21,9 @@ and enable DebugControlComponent in controller:
         );
     }
 
+### core.php setting
+
+CakeDebugHelper not work `Configure::read('debug') == 0`.
+
+    // core.php
+    Configure::write('debug', 1);
