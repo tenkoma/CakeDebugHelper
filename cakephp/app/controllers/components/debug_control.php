@@ -6,7 +6,7 @@ class DebugControlComponent extends Object {
     var $isEnable = null;
 
     function initialize(&$controller) {
-        if ($this->isLocalIp()) {
+        if (Configure::read('debug') > 0) {
             $debugLevel = $this->getRemoteDebugLevel();
             Configure::write('debug', $debugLevel);
         }
